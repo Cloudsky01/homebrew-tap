@@ -3,7 +3,7 @@ cask "rivet" do
   name "rivet"
   desc "Interactive TUI for browsing and managing GitHub Actions workflows"
   homepage "https://github.com/cloudsky01/gh-rivet"
-  version "0.2.1"
+  version "0.3.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "rivet" do
   on_macos do
     on_intel do
       url "https://github.com/Cloudsky01/gh-rivet/releases/download/v#{version}/gh-rivet_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "55e3679b07e48c5d1342a86d50fe2770ca640af4c44d58dc2d4767eed439134a"
+      sha256 "c7aebb0f3b1c365633223ee350908d223cfb4d24f9910ae1738ab03fc5408c00"
     end
     on_arm do
       url "https://github.com/Cloudsky01/gh-rivet/releases/download/v#{version}/gh-rivet_#{version}_Darwin_arm64.tar.gz"
-      sha256 "a05960b93143c6956b29dafbe2ecf55b7695c90d0c0a2a1100157ed21bf62b50"
+      sha256 "849e8e8327901561136fb38258e0d4f7e59535053fbbd8dfc4e6a0bbf123d66e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Cloudsky01/gh-rivet/releases/download/v#{version}/gh-rivet_#{version}_Linux_x86_64.tar.gz"
-      sha256 "1bc621fdc624d9687087a4d0f17ccb3864c506f6260276f60d63cfb7350c4c10"
+      sha256 "1741892f6e1ee5223299184ed912377961f56e564046f76596921fb32acd1704"
     end
     on_arm do
       url "https://github.com/Cloudsky01/gh-rivet/releases/download/v#{version}/gh-rivet_#{version}_Linux_arm64.tar.gz"
-      sha256 "d9e00b88a81da04a8f3a334e549b76775752b3a4031f34e6cf4654bf167e7fea"
+      sha256 "1b1df01f2359d461985f9ce5e2aa435820027f13f583c55913377c99cfafa4e4"
     end
   end
 
