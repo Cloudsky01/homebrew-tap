@@ -5,21 +5,21 @@
 class Rivet < Formula
   desc "Interactive TUI for browsing and managing GitHub Actions workflows"
   homepage "https://github.com/cloudsky01/gh-rivet"
-  version "1.0.0"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.0/gh-rivet_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "be17caf99853aac5419a61a6786e4dcab9096cb3859f8dc52b08be0ab968384d"
+      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.3/gh-rivet_1.0.3_Darwin_x86_64.tar.gz"
+      sha256 "88e0cf045f4aeba753596b06a6b265908189012b044a79b4cf8bb2b2d949a97d"
 
       def install
         bin.install "rivet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.0/gh-rivet_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "c419608e10ed0e4f24ffbba9cf24639bce092b21aa7f20b9fbcc785ca64919f2"
+      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.3/gh-rivet_1.0.3_Darwin_arm64.tar.gz"
+      sha256 "9c5455785a63a4a808776390f11016de6302b90a868836baba71f949fde8f941"
 
       def install
         bin.install "rivet"
@@ -29,15 +29,15 @@ class Rivet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.0/gh-rivet_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "94525dc0714ae9caaf5600a96a9df01a63a3ac8b236c1fe85dba144d37df0f5c"
+      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.3/gh-rivet_1.0.3_Linux_x86_64.tar.gz"
+      sha256 "3b126952ea0f5b648ac4ba504f4cddafba5d44d2b9829c0615f7e1b3a7edf28c"
       def install
         bin.install "rivet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.0/gh-rivet_1.0.0_Linux_arm64.tar.gz"
-      sha256 "80547d9746804088e237ecbd2d6382111a96cfddb016fe872d612985d1e3868b"
+      url "https://github.com/Cloudsky01/gh-rivet/releases/download/v1.0.3/gh-rivet_1.0.3_Linux_arm64.tar.gz"
+      sha256 "0a6e2570352aa6b3c03096f00459eda027945af7bc152253e9dd2c31ad6e6c77"
       def install
         bin.install "rivet"
       end
